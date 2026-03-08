@@ -71,6 +71,39 @@ export class AuthController {
             message: 'Token refreshed successfully'
         });
     });
+
+    forgotPassword = catchAsync(async (req: Request, res: Response) => {
+        // TODO: Implement forgot password logic
+
+        return ApiResponse.success({
+            res,
+            statusCode: 200,
+            data: null,
+            message: 'If an account with that email exists, a password reset link has been sent'
+        });
+    });
+
+    resetPassword = catchAsync(async (req: Request, res: Response) => {
+        // TODO: Implement reset password logic
+
+        return ApiResponse.success({
+            res,
+            statusCode: 200,
+            data: null,
+            message: 'Password has been reset successfully'
+        });
+    });
+
+    verifyEmail = catchAsync(async (req: Request, res: Response) => {
+        // TODO: Implement email verification logic
+
+        return ApiResponse.success({
+            res,
+            statusCode: 200,
+            data: null,
+            message: 'Email verified successfully'
+        });
+    });
 }
 
 export const authController = new AuthController();

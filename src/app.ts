@@ -16,6 +16,12 @@ import { userRoutes } from './modules/user';
 import { productRoutes } from './modules/product';
 import { orderRoutes } from './modules/order';
 import { cartRoutes } from './modules/cart';
+import { categoryRoutes } from './modules/category/category.routes';
+import { addressRoutes } from './modules/address/address.routes';
+import { paymentRoutes } from './modules/payment/payment.routes';
+import { couponRoutes } from './modules/coupon/coupon.routes';
+import { wishlistRoutes } from './modules/wishlist/wishlist.routes';
+import { adminRoutes } from './modules/admin/admin.routes';
 
 const app: Application = express();
 
@@ -84,6 +90,12 @@ app.use(`${API_PREFIX}/users`, userRoutes);
 app.use(`${API_PREFIX}/products`, productRoutes);
 app.use(`${API_PREFIX}/orders`, orderRoutes);
 app.use(`${API_PREFIX}/cart`, cartRoutes);
+app.use(`${API_PREFIX}/categories`, categoryRoutes);
+app.use(`${API_PREFIX}/addresses`, addressRoutes);
+app.use(`${API_PREFIX}/payments`, paymentRoutes);
+app.use(`${API_PREFIX}/coupons`, couponRoutes);
+app.use(`${API_PREFIX}/wishlists`, wishlistRoutes);
+app.use(`${API_PREFIX}/admin`, adminRoutes);
 
 // ──────────────────────────────────────────────
 // Error Handling

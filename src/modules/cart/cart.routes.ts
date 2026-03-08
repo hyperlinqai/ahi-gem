@@ -13,6 +13,7 @@ const router = Router();
  * PUT    /items/:itemId - Update cart item quantity
  * DELETE /items/:itemId - Remove item from cart
  * DELETE /             - Clear entire cart
+ * POST   /merge        - Merge guest cart into user cart on login
  */
 
 export { router as cartRoutes };

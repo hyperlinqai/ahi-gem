@@ -13,7 +13,9 @@ const router = Router();
  * GET    /:id          - Get order by ID
  * POST   /             - Create new order
  * PATCH  /:id/status   - Update order status (admin)
- * POST   /:id/cancel   - Cancel order
+ * PATCH  /:id/cancel   - Cancel order
+ * GET    /:id/invoice  - Download order invoice PDF
+ * POST   /:id/return   - Initiate return request
  */
 
 export { router as orderRoutes };
